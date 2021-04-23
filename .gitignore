@@ -3,3 +3,4 @@ startbootstrap-freelancer-master
 beryllium
 nginx_image/fruit
 apache_php_image/startbootstrap-sb-admin-2
+multi_stage_image/app/**/*
