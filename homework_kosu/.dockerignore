@@ -1,0 +1,4 @@
+./kosu/_build
+./kosu/.elixir_ls
+./kosu/.gitlab
+./kosu/deps
