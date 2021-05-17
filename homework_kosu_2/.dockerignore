@@ -1,0 +1,5 @@
+./kosu/_build
+./kosu/.elixir_ls
+./kosu/.gitlab
+./kosu/deps
+./kosu/apps/kosu_web/assets/node_modules
