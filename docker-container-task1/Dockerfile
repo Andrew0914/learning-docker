@@ -1,0 +1,3 @@
+FROM httpd
+ENV ENV dev
+ENV VIRTUALIZATION docker
