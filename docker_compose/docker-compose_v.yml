@@ -1,0 +1,11 @@
+version: "3"
+services:
+  web:
+    container_name: nginx1
+    ports: 
+      - "8080:80"
+    image: nginx
+    volumes: 
+      - "vol2:/usr/share/ngnix/html"
+volumes: 
+  vol2:

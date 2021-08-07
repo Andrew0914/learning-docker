@@ -1,7 +1,9 @@
 version: "3"
 services:
   web:
-    container_name: nginx1
+    container_name: nginx2
     ports: 
-      - "8080:80"
+      - "8081:80"
     image: nginx
+    volumes: 
+      - "/mnt/d/projects/css-learning:/usr/share/ngnix/html"
