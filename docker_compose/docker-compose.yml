@@ -6,4 +6,9 @@ services:
       - "8081:80"
     image: nginx
     volumes: 
-      - "/mnt/d/projects/css-learning:/usr/share/ngnix/html"
+      - "D:/projects/test:/usr/share/nginx/html"
+    networks: 
+      - net-test
+networks: 
+  net-test:
+      
