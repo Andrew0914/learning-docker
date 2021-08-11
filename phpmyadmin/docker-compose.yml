@@ -1,0 +1,29 @@
+version: "3"
+services:
+  db:
+    image: mysql
+    container_name: db
+    restart: always
+    ports:
+      - 3333:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=andrew
+      - MYSQL_DATABASE=example_db
+      - MYSQL_USER=andrew
+      - MYSQL_PASSWORD=andrew
+    networks: 
+      - net
+  pma:
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    container_name: pma
+    ports: 
+      - 8088:80
+    environment: 
+      - PMA_HOST=db
+      - PMA_PORT=3333
+      - PMA_ARBITRARY=1
+    networks: 
+      - net
+networks: 
+  net:
